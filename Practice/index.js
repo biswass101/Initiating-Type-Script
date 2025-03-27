@@ -37,3 +37,28 @@ myCar = {
     color: "Blue",
     seats: 2
 };
+var appartMents;
+appartMents = [];
+var farukVilla;
+farukVilla = {
+    name: "Faruk Villa",
+    appartType: "Building",
+    floor: 20,
+    address: "Thana Road, Savar, Dhaka",
+    isCompleted: true
+};
+appartMents.push(farukVilla);
+var matiurRahmanScl;
+matiurRahmanScl = {
+    name: "Matiur Rahman School",
+    appartType: "Building",
+    floor: 3,
+    address: "Dendabor New Para, Paddibuddyt, Savar, Dhaka",
+    isCompleted: true
+};
+appartMents.push(matiurRahmanScl);
+appartMents.map(function (appartMent) { return console.log(appartMent); });
+var getAppartMents = function (appartMent) {
+    return appartMent;
+};
+console.log(getAppartMents(appartMents));

@@ -50,4 +50,44 @@ myCar = {
     name: "Ferrari",
     color: "Blue",
     seats: 2
+};
+
+type AppartMent = {
+    name: string, 
+    appartType: string, 
+    floor: Number,
+    address: string,
+    isCompleted: boolean
+};
+
+let appartMents: AppartMent[];
+appartMents = [];
+
+let farukVilla: AppartMent;
+farukVilla = {
+    name: "Faruk Villa",
+    appartType: "Building",
+    floor: 20,
+    address: "Thana Road, Savar, Dhaka",
+    isCompleted: true,
+};
+appartMents.push(farukVilla);
+
+let matiurRahmanScl: AppartMent;
+matiurRahmanScl = {
+    name: "Matiur Rahman School",
+    appartType: "Building",
+    floor: 3,
+    address: "Dendabor New Para, Paddibuddyt, Savar, Dhaka",
+    isCompleted: true,
+};
+
+appartMents.push(matiurRahmanScl);
+appartMents.map((appartMent) => console.log(appartMent));
+
+
+const getAppartMents = (appartMent: AppartMent[]) => {
+    return appartMent;
 }
+
+console.log(getAppartMents(appartMents));
